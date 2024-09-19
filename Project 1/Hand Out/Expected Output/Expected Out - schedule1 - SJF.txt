@@ -1,0 +1,23 @@
+Algorithm: SJF
+File name: schedule1.txt
+Starting simulation...
+Start running Process {Id='T1', Arrival Time=10, Burst Time=50, Current Time=10}
+T1 finished at time 60. Its waiting time is 0
+Current average waiting time: 0.0
+Start running Process {Id='T2', Arrival Time=10, Burst Time=50, Current Time=60}
+T2 finished at time 110. Its waiting time is 50
+Current average waiting time: 25.0
+Start running Process {Id='T3', Arrival Time=10, Burst Time=50, Current Time=110}
+T3 finished at time 160. Its waiting time is 100
+Current average waiting time: 50.0
+Start running Process {Id='T4', Arrival Time=10, Burst Time=50, Current Time=160}
+T4 finished at time 210. Its waiting time is 150
+Current average waiting time: 75.0
+Start running Process {Id='T5', Arrival Time=10, Burst Time=50, Current Time=210}
+T5 finished at time 260. Its waiting time is 200
+Current average waiting time: 100.0
+Start running Process {Id='T6', Arrival Time=40, Burst Time=50, Current Time=260}
+T6 finished at time 310. Its waiting time is 220
+Current average waiting time: 120.0
+Final Time: 310
+End of simulation.

@@ -1,0 +1,22 @@
+Algorithm: RR with quantum = 5
+File name: schedule3.txt
+Starting simulation...
+Start running Process {Id='P1', Arrival Time=0, Burst Time=10, Current Time=0}
+Stop running Process {Id='P1, Current Time=5}
+Start running Process {Id='P2', Arrival Time=0, Burst Time=5, Current Time=5}
+P2 finished at time 10. Its waiting time is 5
+Current average waiting time: 5.0
+Start running Process {Id='P3', Arrival Time=3, Burst Time=1, Current Time=10}
+P3 finished at time 11. Its waiting time is 7
+Current average waiting time: 6.0
+Start running Process {Id='P1', Arrival Time=0, Burst Time=10, Current Time=11}
+Stop running Process {Id='P1, Current Time=15}
+Start running Process {Id='P4', Arrival Time=3, Burst Time=1, Current Time=15}
+P4 finished at time 16. Its waiting time is 12
+Current average waiting time: 8.0
+Start running Process {Id='P1', Arrival Time=0, Burst Time=10, Current Time=16}
+P1 finished at time 17. Its waiting time is 7
+Current average waiting time: 7.75
+Final Time: 17
+End of simulation.
+
