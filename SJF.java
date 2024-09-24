@@ -1,38 +1,79 @@
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 /**
  * Shortest Job First.
  */
 public class SJF implements Scheduler {
+	private PriorityQueue<SimProcess> processQueue;
+	private SimProcess currentProcess;
+	private int totalWaitingTime;
+	private int completedProcesses;
+
+	public SJF() {
+		processQueue = new PriorityQueue<>(new Comparator<SimProcess>() {
+			@Override
+			public int compare(SimProcess p1, SimProcess p2) {
+				return Integer.compare(p1.getBurstTime(), p2.getBurstTime());
+			}
+		});
+		currentProcess = null;
+		totalWaitingTime = 0;
+		completedProcesses = 0;
+	}
 
 	@Override
 	public void onProcessArrival(SimProcess p, int time) {
-		// TODO Auto-generated method stub
+		processQueue.add(p);
+
+		if (currentProcess == null){
+			startNextProcess(time);
+		}
 	}
 
 	@Override
 	public void onProcessExit(SimProcess p, int time) {
-		// TODO Auto-generated method stub
+		int waitingTime = time - p.getTimeOfArrival() - p.getBurstTime();
+		totalWaitingTime += waitingTime;
+		completedProcesses++;
+
+		System.out.println(p.getId() + " finished at time " + time + ". Its waiting time is " + waitingTime);
+		System.out.println("Current average waiting time: " + (totalWaitingTime / (double) completedProcesses));
+
+		currentProcess = null;
+		startNextProcess(time);
 	}
 
 	@Override
 	public void onClockInterrupt(int timeElapsed, int time) {
-		// TODO Auto-generated method stub
+		if (currentProcess != null){
+			currentProcess.run();
+
+			if (currentProcess.isFinished()){
+				onProcessExit(currentProcess, time);
+			}
+		}
 	}
 
 	@Override
 	public String getAlgorithmName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "SJF";
 	}
 
 	@Override
 	public SimProcess currentProcess() {
-		// TODO Auto-generated method stub
-		return null;
+		return currentProcess;
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return currentProcess == null && processQueue.isEmpty();
+	}
+
+	private void startNextProcess(int time){
+		if (!processQueue.isEmpty()){
+			currentProcess = processQueue.poll();
+			System.out.println(currentProcess.getId() + " starts at time " + time);
+		}
 	}
 }
