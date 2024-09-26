@@ -42,6 +42,10 @@ public class SimProcess {
 		remainingTime--;
 	}
 
+	public int getRemainingTime() {
+		return remainingTime;
+	}
+
 	public boolean isFinished() {
 		return remainingTime == 0;
 	}
