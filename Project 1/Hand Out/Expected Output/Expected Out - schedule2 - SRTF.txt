@@ -1,0 +1,22 @@
+Algorithm: SRTF
+File name: schedule2.txt
+Starting simulation...
+Start running Process {Id='P2', Arrival Time=1, Burst Time=3, Current Time=1}
+Stop running Process {Id='P2, Current Time=2}
+Start running Process {Id='P3', Arrival Time=2, Burst Time=1, Current Time=2}
+P3 finished at time 3. Its waiting time is 0
+Current average waiting time: 0.0
+Start running Process {Id='P2', Arrival Time=1, Burst Time=3, Current Time=3}
+P2 finished at time 5. Its waiting time is 1
+Current average waiting time: 0.5
+Start running Process {Id='P5', Arrival Time=3, Burst Time=4, Current Time=5}
+P5 finished at time 9. Its waiting time is 2
+Current average waiting time: 1.0
+Start running Process {Id='P1', Arrival Time=4, Burst Time=5, Current Time=9}
+P1 finished at time 14. Its waiting time is 5
+Current average waiting time: 2.0
+Start running Process {Id='P4', Arrival Time=2, Burst Time=7, Current Time=14}
+P4 finished at time 21. Its waiting time is 12
+Current average waiting time: 4.0
+Final Time: 21
+End of simulation.

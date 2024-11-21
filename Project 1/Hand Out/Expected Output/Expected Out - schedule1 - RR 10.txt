@@ -1,0 +1,71 @@
+Algorithm: RR with quantum = 10
+File name: schedule1.txt
+Starting simulation...
+Start running Process {Id='T2', Arrival Time=10, Burst Time=50, Current Time=10}
+Stop running Process {Id='T2, Current Time=20}
+Start running Process {Id='T3', Arrival Time=10, Burst Time=50, Current Time=20}
+Stop running Process {Id='T3, Current Time=30}
+Start running Process {Id='T4', Arrival Time=10, Burst Time=50, Current Time=30}
+Stop running Process {Id='T4, Current Time=40}
+Start running Process {Id='T5', Arrival Time=10, Burst Time=50, Current Time=40}
+Stop running Process {Id='T5, Current Time=50}
+Start running Process {Id='T1', Arrival Time=10, Burst Time=50, Current Time=50}
+Stop running Process {Id='T1, Current Time=60}
+Start running Process {Id='T2', Arrival Time=10, Burst Time=50, Current Time=60}
+Stop running Process {Id='T2, Current Time=70}
+Start running Process {Id='T3', Arrival Time=10, Burst Time=50, Current Time=70}
+Stop running Process {Id='T3, Current Time=80}
+Start running Process {Id='T6', Arrival Time=40, Burst Time=50, Current Time=80}
+Stop running Process {Id='T6, Current Time=90}
+Start running Process {Id='T4', Arrival Time=10, Burst Time=50, Current Time=90}
+Stop running Process {Id='T4, Current Time=100}
+Start running Process {Id='T5', Arrival Time=10, Burst Time=50, Current Time=100}
+Stop running Process {Id='T5, Current Time=110}
+Start running Process {Id='T1', Arrival Time=10, Burst Time=50, Current Time=110}
+Stop running Process {Id='T1, Current Time=120}
+Start running Process {Id='T2', Arrival Time=10, Burst Time=50, Current Time=120}
+Stop running Process {Id='T2, Current Time=130}
+Start running Process {Id='T3', Arrival Time=10, Burst Time=50, Current Time=130}
+Stop running Process {Id='T3, Current Time=140}
+Start running Process {Id='T6', Arrival Time=40, Burst Time=50, Current Time=140}
+Stop running Process {Id='T6, Current Time=150}
+Start running Process {Id='T4', Arrival Time=10, Burst Time=50, Current Time=150}
+Stop running Process {Id='T4, Current Time=160}
+Start running Process {Id='T5', Arrival Time=10, Burst Time=50, Current Time=160}
+Stop running Process {Id='T5, Current Time=170}
+Start running Process {Id='T1', Arrival Time=10, Burst Time=50, Current Time=170}
+Stop running Process {Id='T1, Current Time=180}
+Start running Process {Id='T2', Arrival Time=10, Burst Time=50, Current Time=180}
+Stop running Process {Id='T2, Current Time=190}
+Start running Process {Id='T3', Arrival Time=10, Burst Time=50, Current Time=190}
+Stop running Process {Id='T3, Current Time=200}
+Start running Process {Id='T6', Arrival Time=40, Burst Time=50, Current Time=200}
+Stop running Process {Id='T6, Current Time=210}
+Start running Process {Id='T4', Arrival Time=10, Burst Time=50, Current Time=210}
+Stop running Process {Id='T4, Current Time=220}
+Start running Process {Id='T5', Arrival Time=10, Burst Time=50, Current Time=220}
+Stop running Process {Id='T5, Current Time=230}
+Start running Process {Id='T1', Arrival Time=10, Burst Time=50, Current Time=230}
+Stop running Process {Id='T1, Current Time=240}
+Start running Process {Id='T2', Arrival Time=10, Burst Time=50, Current Time=240}
+T2 finished at time 250. Its waiting time is 190
+Current average waiting time: 190.0
+Start running Process {Id='T6', Arrival Time=40, Burst Time=50, Current Time=250}
+Stop running Process {Id='T6, Current Time=260}
+Start running Process {Id='T4', Arrival Time=10, Burst Time=50, Current Time=260}
+T4 finished at time 270. Its waiting time is 210
+Current average waiting time: 200.0
+Start running Process {Id='T1', Arrival Time=10, Burst Time=50, Current Time=270}
+T1 finished at time 280. Its waiting time is 220
+Current average waiting time: 206.66666666666666
+Start running Process {Id='T6', Arrival Time=40, Burst Time=50, Current Time=280}
+T6 finished at time 290. Its waiting time is 200
+Current average waiting time: 205.0
+Start running Process {Id='T3', Arrival Time=10, Burst Time=50, Current Time=290}
+T3 finished at time 300. Its waiting time is 240
+Current average waiting time: 212.0
+Start running Process {Id='T5', Arrival Time=10, Burst Time=50, Current Time=300}
+T5 finished at time 310. Its waiting time is 250
+Current average waiting time: 218.33333333333334
+Final Time: 310
+End of simulation.
